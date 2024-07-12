@@ -1,5 +1,5 @@
 FROM apache/airflow:2.9.2
-COPY requeriments.txt
+COPY requirements.txt /
 RUN pip install --no-cache-dir -r /requirements.txt
 
 COPY quarto.sh /
@@ -22,3 +22,4 @@ ENV JAVA_HOME='/usr/lib/jvm/java-17-openjdk-amd64'
 ENV PATH=$PATH:$JAVA_HOME/bin
 ENV SPARK_HOME='/opt/spark'
 ENV PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin
+ENV SPARK_NO_DAEMONIZE=true
