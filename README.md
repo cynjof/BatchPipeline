@@ -8,10 +8,13 @@
 
 
 ### Data Architecture
-
-
-
-
+This data engineering project includes the following:
+- Airflow: To schedule and orchestrate DAGs.
+- Postgres: This database stores Airflow’s details and has a schema to represent upstream databases.
+- DuckDB: To act as our warehouse
+- Quarto with Plotly: To convert code in markdown format to HTML files that can be embedded in your app or served as is.
+- Apache Spark: This is used to process our data, specifically to run a classification algorithm.
+- Minio: To provide an S3 compatible open source storage system.
 
 ## Prerequisites
 
