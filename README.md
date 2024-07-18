@@ -15,6 +15,10 @@ This data engineering project includes the following:
 - Quarto with Plotly: To convert code in markdown format to HTML files that can be embedded in your app or served as is.
 - Apache Spark: This is used to process our data, specifically to run a classification algorithm.
 - Minio: To provide an S3 compatible open source storage system.
+  
+![image](https://github.com/user-attachments/assets/ca4a31fc-72af-4916-a4c5-2db9de5248c9)
+
+![image](https://github.com/user-attachments/assets/e81e4d3b-dce3-42bf-9e72-14280b62f190)
 
 ## Prerequisites
 
