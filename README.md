@@ -1,11 +1,9 @@
 # Batch Pipeline Project
 
 ## Overview
-
-
-
-### Data Visualization
-
+Data Engineering project to set up a batch data pipeline of a company which collects user data and creates a user profile. The data pipeline goal is populate the user_behavior_metric table. The user_behavior_metric table is an OLAP table used by analysts. The data sources are:
+- user_purchase: OLTP table with user purchase information.
+- movie_review.csv: Data is sent every day by an external data vendor.
 
 ### Data Architecture
 This data engineering project includes the following:
@@ -20,18 +18,14 @@ This data engineering project includes the following:
 
 ![image](https://github.com/user-attachments/assets/e81e4d3b-dce3-42bf-9e72-14280b62f190)
 
-## Prerequisites
-
-
 
 ## How to Run This Project
 
-Step-by-step instructions to run the project.
-
-1. Install x packages
-2. Run command: `python x`
-3. Make sure it's running properly by checking z
-4. To clean up at the end, run script: `python cleanup.py`
+1. Clone the repo
+2. Run command: `make up`
+3. Go to Airflow UI and run the DAG "user_analytics.py"
 
 ## Lessons Learned
+Setting up insfrastructure using github codespace. 
+Learning new tools like quarto dashboards, Minio and DuckDB data warehouse.
 
