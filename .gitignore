@@ -4,3 +4,4 @@ plugins/
 temp/
 tests/
 visualization/
+dags/scripts/dashboard/dashboard_files/
