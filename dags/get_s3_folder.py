@@ -1,4 +1,6 @@
 import boto3
+import os
+import shutil
 
 def get_s3_folder(s3_bucket, s3_folder, local_folder="/opt/airflow/temp/s3folder/"):
     s3 = boto3.resource(

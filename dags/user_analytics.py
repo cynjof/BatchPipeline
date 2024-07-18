@@ -1,8 +1,4 @@
-import os
-import shutil
 from datetime import datetime, timedelta
-import boto3
-import duckdb
 from airflow import DAG
 from airflow.operators.bash_operator import BashOperator
 from airflow.operators.python_operator import PythonOperator
