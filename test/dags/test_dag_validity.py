@@ -7,7 +7,6 @@ def test_no_import_errors(monkeypatch):
     monkeypatch.setenv("AIRFLOW_VAR_BUCKET", "test-bucket")
     monkeypatch.setenv("AIRFLOW_VAR_EMR_ID", "test-emr-id")
 
-    # Check errors
     dag_bag = DagBag()
     assert len(dag_bag.import_errors) == 0, "No Import Failures"
     assert dag_bag.size() == 1
