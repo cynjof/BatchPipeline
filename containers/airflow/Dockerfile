@@ -14,9 +14,9 @@ RUN apt-get update && \
 
 RUN curl https://dlcdn.apache.org/spark/spark-3.5.2/spark-3.5.2-bin-hadoop3.tgz -o spark-3.5.2-bin-hadoop3.tgz
 
-RUN chmod 755 spark-3.5.1-bin-hadoop3.tgz
+RUN chmod 755 spark-3.5.2-bin-hadoop3.tgz
 
-RUN mkdir -p /opt/spark && tar xvzf spark-3.5.1-bin-hadoop3.tgz --directory /opt/spark --strip-components=1
+RUN mkdir -p /opt/spark && tar xvzf spark-3.5.2-bin-hadoop3.tgz --directory /opt/spark --strip-components=1
 
 ENV JAVA_HOME='/usr/lib/jvm/java-17-openjdk-amd64'
 ENV PATH=$PATH:$JAVA_HOME/bin
