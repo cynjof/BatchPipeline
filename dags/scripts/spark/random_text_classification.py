@@ -1,4 +1,5 @@
 # pyspark
+# pylint: disable=locally-disabled, multiple-statements, line-too-long
 import argparse
 from pyspark.ml.feature import StopWordsRemover, Tokenizer
 from pyspark.sql import SparkSession
@@ -56,4 +57,6 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     spark = spark_session()
-    random_text_classifier(input_loc=args.input, output_loc=args.output, run_id=args.run_id)
+    random_text_classifier(input_loc=args.input, 
+                            output_loc=args.output, 
+                            run_id=args.run_id)

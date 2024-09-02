@@ -13,7 +13,8 @@ def create_user_behaviour_metric():
         select 
           up.customer_id, 
           sum(up.quantity * up.unit_price) as amount_spent, 
-          sum(case when mr.positive_review then 1 else 0 end) as num_positive_reviews, 
+          sum(case when mr.positive_review then 1 else 0 end) 
+            as num_positive_reviews, 
           count(mr.cid) as num_reviews 
         from up 
         join mr on up.customer_id = mr.cid 
