@@ -26,7 +26,7 @@ sh:
 ####################################################################################################################
 # Testing, auto formatting, type checks, & Lint checks
 pytest:
-	docker exec webserver pytest -p no:warnings -v /opt/airflow/tests/dags/
+	docker exec webserver pytest -p no:warnings -v /opt/airflow/test/
 
 format:
 	docker exec webserver python -m black -S --line-length 79 .
