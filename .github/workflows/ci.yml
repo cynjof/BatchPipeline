@@ -8,6 +8,10 @@ jobs:
     steps:
       - name: checkout repo
         uses: actions/checkout@v2
+      - name: Check
+        run: |
+          pwd
+          ls -l
       - name: Grant perms
         run: make perms
       - name: Spin up containers
