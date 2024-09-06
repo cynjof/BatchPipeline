@@ -12,16 +12,9 @@ jobs:
         run: |
           pwd
           ls -l
-          echo pwd
-          echo ls -l
       - name: Grant perms
         run: make perms
       - name: Spin up containers
         run: make up
       - name: Run CI test
-        run: |
-          pwd
-          ls -l
-          echo pwd
-          echo ls -l
-          make ci
+        run: make ci
