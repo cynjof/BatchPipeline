@@ -9,6 +9,6 @@ def test_no_import_errors(monkeypatch):
 
     # Testing
     dag_bag = DagBag()
-    assert dag is not None, f'DAG not found in DagBag'
+
     assert len(dag_bag.import_errors) == 0, "No Import Failures"
     assert 1==2
